@@ -4,10 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <script src="./js/script.js" defer></script>
-    <title>Book library</title>
+    <title>Library.io</title>
 </head>
 <body>
-    <h1>TEST</h1>
+
+    <div id="sidebar">
+        <div class="menu">
+            <h1 class="logo">Library.io</h1>
+            <button class="primary-button" id="new-book">Add book +</button>
+        </div>
+
+        <!-- A modal dialog containing a form -->
+
+        <dialog id="book-dialog">
+            <h1>New entry</h1>
+
+            <form id="book-form" action="#" method="dialog">
+                <div class="input-container">
+                    <label for="book-title">Title</label>
+                    <input autofocus required type="text" name="book-title" id="book-title">
+                </div>
+
+                <div class="input-container">
+                    <label for="book-author">Author</label>
+                    <input required type="text" name="book-author" id="book-author">
+                </div>
+
+                <div class="input-container">
+                    <label for="book-pages">Number of pages</label>
+                    <input required min="1" type="number" name="book-pages" id="book-pages">
+                </div>
+
+                <fieldset class="read-container">
+                    <legend>Have you read the book?</legend>
+                  
+                    <div>
+                      <input checked type="radio" name="read" id="read" value="read">
+                      <label for="read">Yes</label>
+                    </div>
+                  
+                    <div>
+                      <input type="radio" name="read" id="not-read" value="not read">
+                      <label for="not-read">No</label>
+                    </div>
+                  </fieldset>
+
+                <div class="form-buttons">
+                    <button class="primary-button" id="close-button" >Close</button>
+                    <button class="primary-button" id="submit-button" type="submit">Add new book</button>
+                </div>
+            </form>
+        </dialog>
+
+        <output></output>
+
+    </div>
+
+    <div id="main-area">
+    </div>
+
 </body>
 </html>
