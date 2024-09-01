@@ -214,3 +214,19 @@ input[type='radio'] {
   background-color: var(--primary600);
   color: var(--white);
 }
+
+@media  all and (max-width:768px) {
+  body{
+    grid-template-columns: auto;
+    grid-auto-rows: auto 1fr;
+  }
+  #sidebar{
+    padding:40px;
+  }
+  #sidebar .menu{
+    gap:20px;
+  }
+  #main-area{
+    justify-content: center;
+  }
+}
