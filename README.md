@@ -1,4 +1,4 @@
-<h1>Dashboard - 2024</h1>
+<h1>Library - 2024</h1>
 <p>A small library app done as a part of The Odin Project's curriculum in 2024.<p>
 <h2>Outcome</h2>
 <ul>
@@ -6,4 +6,4 @@
     <li>Learned about <b>dialogs/modals</b> and used them to display a form</li>
     <li>Practiced using <b>object constructor functions</b> and working with objects</li>
 </ul>
-<h2>LIVE DEMO: TBA</h2>
+<h2>LIVE DEMO: <a href="https://projecthenri.github.io/library-2024/">LIBRARY.IO</a></h2>
